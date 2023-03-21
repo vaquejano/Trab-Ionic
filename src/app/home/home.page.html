@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Bem-vindo ao Lanchão
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row >
+      <ion-col>
+        <ion-button color="danger" routerLink="/cardapio">
+          <ion-icon name="restaurant"></ion-icon>
+          Cardápio
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button slot="end" routerLink="/cardapio/hamburguer">Cardápio de Hambúrguer</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

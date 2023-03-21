@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cardápio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Selecione um tipo de lanche:</ion-label>
+      <ion-select [(ngModel)]="tipo">
+        <ion-select-option value="cachorrao">Cachorrão</ion-select-option>
+        <ion-select-option value="hamburguer">Hambúrguer</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item *ngIf="tipo === 'cachorrao'">
+      <ion-label>Selecione um cachorrão:</ion-label>
+      <ion-select [(ngModel)]="cachorrao">
+        <ion-select-option value="simples">Simples</ion-select-option>
+        <ion-select-option value="completo">Completo</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item *ngIf="tipo === 'hamburguer'">
+      <ion-label>Selecione um hambúrguer:</ion-label>
+      <ion-select [(ngModel)]="hamburguer">
+        <ion-select-option value="simples">Simples</ion-select-option>
+        <ion-select-option value="completo">Completo</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-card *ngIf="tipo === 'cachorrao' && cachorrao === 'simples'" (click)="mostrarDescricao('simplesCachorrao')">
+    <ion-card-header>
+      <ion-card-title>Simples</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img src="assets/img/simples-cachorrao.jpg"></ion-img>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="tipo === 'cachorrao' && cachorrao === 'completo'" (click)="mostrarDescricao('completoCachorrao')">
+    <ion-card-header>
+      <ion-card-title>Completo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img src="assets/img/completo-cachorrao.jpg"></ion-img>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="tipo === 'hamburguer' && hamburguer === 'simples'" (click)="mostrarDescricao('simplesHamburguer')">
+    <ion-card-header>
+      <ion-card-title>Simples</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img src="assets/img/completo-cachorrao.jpg"></ion-img>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="tipo === 'hamburguer' && hamburguer === 'completo'" (click)="mostrarDescricao('completoHamburguer')">
+    <ion-card-header>
+      <ion-card-title>Completo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img src="assets/img/completo-cachorrao.jpg"></ion-img>
+    </ion-card-content>
+  </ion-card>

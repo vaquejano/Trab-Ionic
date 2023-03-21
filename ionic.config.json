@@ -1,0 +1,7 @@
+{
+  "name": "cardapio-cachorrao",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
