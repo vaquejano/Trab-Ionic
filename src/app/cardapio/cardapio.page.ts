@@ -12,6 +12,8 @@ export class CardapioPage {
   cachorrao: string | undefined;
   hamburguer: string | undefined;
 
+  
+
   constructor(private alertCtrl: AlertController) { }
 
   
@@ -37,7 +39,6 @@ export class CardapioPage {
         break;
       case 'completoHamburguer':
         descricao = 'Hambúrguer Completo: Pão, carne bovina, queijo, alface, tomate, bacon, cebola, ovo e molho especial.';
-        //imagem = '<img src="https://w7.pngwing.com/pngs/411/942/png-transparent-hamburger-cheeseburger-wendy-s-burger-king-food-burger-top.png"'
         imagem = 'https://w7.pngwing.com/pngs/411/942/png-transparent-hamburger-cheeseburger-wendy-s-burger-king-food-burger-top.png';
         break;
     }
