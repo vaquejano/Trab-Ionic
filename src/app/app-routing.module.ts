@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'cardapio',
     loadChildren: () => import('./cardapio/cardapio.module').then( m => m.CardapioPageModule)
+  },  {
+    path: 'lanches',
+    loadChildren: () => import('./lanches/lanches.module').then( m => m.LanchesPageModule)
   },
+
 ];
 
 @NgModule({
