@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LanchesPageRoutingModule } from './lanches-routing.module';
+import { LanchePageRoutingModule } from './lanche-routing.module';
 
-import { LanchesPage } from './lanches.page';
+import { LanchePage } from './lanche.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LanchesPageRoutingModule
+    LanchePageRoutingModule
   ],
-  declarations: [LanchesPage]
+  declarations: [LanchePage]
 })
-export class LanchesPageModule {}
+export class LanchePageModule {}

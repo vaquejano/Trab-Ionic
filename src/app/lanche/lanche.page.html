@@ -3,14 +3,14 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>{{lanches.nome}}</ion-title>
+    <ion-title>{{lanche.nome}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-slides pager="true">
-    <ion-slide *ngFor="let imagem of lanches.imagens; let ix = index">
+    <ion-slide *ngFor="let imagem of lanche.imagem; let ix = index">
       <ion-img [src]="pathImgs + imagem"></ion-img>
     </ion-slide>
   </ion-slides>

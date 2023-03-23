@@ -2,26 +2,27 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-lanches',
-  templateUrl: './lanches.page.html',
-  styleUrls: ['./lanches.page.scss'],
+  selector: 'app-lanche',
+  templateUrl: './lanche.page.html',
+  styleUrls: ['./lanche.page.scss'],
 })
-export class LanchesPage implements OnInit {
+export class LanchePage implements OnInit {
 
   public pathImgs = '../../assets/img/';
 
-  public lanches = {
+  public lanche = {
     codigo: 0,
+    categ: 0,
     nome: '',
     descricao: '',
     status: true,
-    imagens: [],
-    visible: false
+    imagem: [],
+    visibled: true
   }
 
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params=>{
-      this.lanches = params['lanches']
+      this.lanche = params['lanche']
     });
    }
 
