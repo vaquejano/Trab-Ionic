@@ -8,11 +8,25 @@
 </ion-header>
 
 <ion-content>
-
   <ion-slides pager="true">
     <ion-slide *ngFor="let imagem of lanche.imagem; let ix = index">
       <ion-img [src]="pathImgs + imagem"></ion-img>
     </ion-slide>
   </ion-slides>
 
+  <ion-row>
+    <ion-col size="12" class="descricao-lanche">
+      {{ lanche.descricao }}
+    </ion-col>
+  </ion-row>
 </ion-content>
+
+
+
+<ion-footer>
+  <ion-button>
+    <ion-icon></ion-icon>
+  </ion-button>
+</ion-footer>
+
+

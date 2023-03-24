@@ -7,17 +7,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./lanche.page.scss'],
 })
 export class LanchePage implements OnInit {
-
+  
   public pathImgs = '../../assets/img/';
 
   public lanche = {
     codigo: 0,
-    categ: 0,
+    categoria: 0,
     nome: '',
     descricao: '',
-    status: true,
     imagem: [],
-    visibled: true
+    visibled: false
   }
 
   constructor(private route: ActivatedRoute) {

@@ -59,14 +59,13 @@
   font-weight: bold;
 }
 
-.img-lanche{
-  overflow: hidden;
-  padding: 0;
-  text-align: center;
-  border-radius: 4px;
-  height: 120px;
+.card-lanche{
+  background-color: rgb(251, 251, 251);
+  padding: 15px 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+  -moz-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+  box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
 }
 
-.img-lanche img{
-  height: 100%;
-}
+

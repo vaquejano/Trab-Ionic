@@ -11,27 +11,31 @@ export class HomePage {
   public selected = 0;
 
   public categs = [
-    { codigo: 1, nome: 'Cachorrão Simples'},
-    { codigo: 2, nome: 'Cachorrão Completo'},
-    { codigo: 3, nome: 'Hamburguer Simples'},
-    { codigo: 4, nome: 'Hamburguer Completo'}
+    { codigo: 1, nome: 'Cachorrão'},
+    { codigo: 2, nome: 'Hamburguers'}
+    
   ]
 
   public pathImgs = '../../assets/img/';
 
-  public segment = '0';
-
   public lanches = [
-    { codigo: 1, categoria: 1, descricao : 'Cachorrão Simples: Pão, salsicha, queijo, milho, batata palha e molho especial.uncionários', status: true, visibled: true, imagem: ['1simples', '1simples'] },
-    { codigo: 2, categoria: 1, descricao : 'Cachorrão Completo: Pão, salsicha, queijo, milho, batata palha, ovo, bacon, frango desfiado, catupiry e molho especial.', status: true, visibled: true, imagem: ['1completo', '1completo']},
-    { codigo: 3, categoria: 2, descricao : 'Hambúrguer Simples: Pão, carne bovina, queijo, alface, tomate e molho especial.'      , status: true, visibled: true, imagem: ['2hamburguer', '2hamburguer']},
-    { codigo: 4, categoria: 2, descricao : 'Hambúrguer Completo: Pão, carne bovina, queijo, alface, tomate, bacon, cebola, ovo e molho especial.', status: true, visibled: true, imagem: ['2completo', '2completo']}
+    { codigo: 1, categoria: 1, descricao : 'Cachorrão Simples: Pão, salsicha, queijo, milho, batata palha e molho especial.', visibled: false, imagem: ['simples1.jpg', 'simples2.jpg'] },
+    { codigo: 2, categoria: 1, descricao : 'Cachorrão Completo: Pão, salsicha, queijo, milho, batata palha, ovo, bacon, frango desfiado, catupiry e molho especial.', visibled: false, imagem: ['completo1.jpg', 'completo2.jpg']},
+    { codigo: 3, categoria: 2, descricao : 'Hambúrguer Simples: Pão, carne bovina, queijo, alface, tomate e molho especial.'      , visibled: false, imagem: ['hamburgsimples1.jpg', 'hamburgsimples2.jpg']},
+    { codigo: 4, categoria: 2, descricao : 'Hambúrguer Completo: Pão, carne bovina, queijo, alface, tomate, bacon, cebola, ovo e molho especial.', visibled: false, imagem: ['hamburgcompleto1.jpg', 'hamburgcompleto2.jpg']}
   ]
+
+  public slideOpts = {
+    slidesPerView: 1
+  }
+
 
   route: any;
 
+
+
   constructor(private navCtrl: NavController) {
-    
+    this.setSelected(1);
   }
 
   public goLanche(lanche:any){
