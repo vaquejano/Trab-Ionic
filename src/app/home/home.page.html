@@ -36,7 +36,7 @@
 
           <ion-row>
             <ion-col class="ion-text-center">
-              PREÇO
+              {{ lanche.preco }}
             </ion-col>
           </ion-row>
 
@@ -48,7 +48,18 @@
               </ion-button>
             </ion-col>
           </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>
 
-          <ion-footer>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button slot="end" color="danger">
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+ 
 
-          </ion-footer>
+</ion-footer>

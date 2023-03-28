@@ -20,16 +20,16 @@ export class HomePage {
   public pathImgs = '../../assets/img/';
 
   public lanches = [
-    { codigo: 1, categoria: 1, descricao : 'Cachorrão Simples: Pão, salsicha, queijo, milho, batata palha e molho especial.', visibled: false, imagem: ['simples1.jpg', 'simples2.jpg'] },
-    { codigo: 2, categoria: 1, descricao : 'Cachorrão Completo: Pão, salsicha, queijo, milho, batata palha, ovo, bacon, frango desfiado, catupiry e molho especial.', visibled: false, imagem: ['completo1.jpg', 'completo2.jpg']},
-    { codigo: 3, categoria: 2, descricao : 'Hambúrguer Simples: Pão, carne bovina, queijo, alface, tomate e molho especial.'      , visibled: false, imagem: ['hamburgsimples1.jpg', 'hamburgsimples2.jpg']},
-    { codigo: 4, categoria: 2, descricao : 'Hambúrguer Completo: Pão, carne bovina, queijo, alface, tomate, bacon, cebola, ovo e molho especial.', visibled: false, imagem: ['hamburgcompleto1.jpg', 'hamburgcompleto2.jpg']},
-    { codigo: 5, categoria: 3, descricao : 'Pizza Bahiana: carne seca, queijo, pimenta dedo de moça, cebola, ovo de codorna.', visibled: false, imagem: ['pizzabahiana1.jpg', 'pizzabahiana2.jpg']}
+    { codigo: 1, categoria: 1, preco: 'R$ 13,90', descricao : 'Cachorrão Simples: Pão, salsicha, queijo, milho, batata palha e molho especial.', visibled: false, imagem: ['simples1.jpg', 'simples2.jpg'] },
+    { codigo: 1, categoria: 1, preco: 'R$ 17,00', descricao : 'Cachorrão Completo: Pão, salsicha, queijo, milho, batata palha, ovo, bacon, frango desfiado, catupiry e molho especial.', visibled: false, imagem: ['completo1.jpg', 'completo2.jpg']},
+    { codigo: 2, categoria: 2, preco: 'R$ 20,00', descricao : 'Hambúrguer Simples: Pão, carne bovina, queijo, alface, tomate e molho especial.'      , visibled: false, imagem: ['hamburgsimples1.jpg', 'hamburgsimples2.jpg']},
+    { codigo: 2, categoria: 2, preco: 'R$ 29,90', descricao : 'Hambúrguer Completo: Pão, carne bovina, queijo, alface, tomate, bacon, cebola, ovo e molho especial.', visibled: false, imagem: ['hamburgcompleto1.jpg', 'hamburgcompleto2.jpg']},
+    { codigo: 3, categoria: 3, preco: 'R$ 32,90', descricao : 'Pizza Bahiana: carne seca, queijo, pimenta dedo de moça, cebola, ovo de codorna.', visibled: false, imagem: ['pizzabahiana1.jpg', 'pizzabahiana2.jpg']}
 
   ]
   
   public slideOpts = {
-    slidesPerView: 1
+    slidesPerView: 2
   }
 
 

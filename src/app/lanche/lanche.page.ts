@@ -15,6 +15,7 @@ export class LanchePage implements OnInit {
     categoria: 0,
     nome: '',
     descricao: '',
+    preco: 0,
     imagem: [],
     visibled: false
   }
