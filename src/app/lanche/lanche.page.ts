@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,9 +6,11 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './lanche.page.html',
   styleUrls: ['./lanche.page.scss'],
 })
-export class LanchePage implements OnInit {
+export class LanchePage  {
   
   public pathImgs = '../../assets/img/';
+
+  public quantidade = 0;
 
   public lanche = {
     codigo: 0,
@@ -26,7 +28,17 @@ export class LanchePage implements OnInit {
     });
    }
 
-  ngOnInit() {
+
+
+
+   public add(){
+    this.quantidade += 1;
+  }
+
+  public remove(){
+    if(this.quantidade > 0){
+      this.quantidade -= 1;
+    }
   }
 
 }
