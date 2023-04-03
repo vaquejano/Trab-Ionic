@@ -1,13 +1,15 @@
 <ion-header>
   
-<ion-row class="ion-align-items-center header-line">
+<ion-row class="ion-align-items-center ">
   <ion-col size="2" class="menu-icon">
     <ion-icon name="reorder-three"></ion-icon>
-    
-      APLICATIVO
-    
     </ion-col>
-    <ion-col size="2" class="ion-text-end account-icon">
+
+    <ion-col size="8" class="ion-text-center">
+     APLICATIVO
+    </ion-col>
+
+    <ion-col size="2" class="ion-text-end ">
       <ion-icon name="person-circle-outline"></ion-icon>
     </ion-col>
     </ion-row>
@@ -15,7 +17,7 @@
     
   <ion-grid>
     <ion-row class="ion-align-items-center header-subline">
-      <ion-slides pager="true" class="slide-line" [options]="slideOpts">
+      <ion-slides pager="false" class="slide-line" [options]="slideOpts">
         <ion-slide *ngFor="let categ of categs; let ix = index" [ngClass]="categ.codigo == selected ? 'slide-actived' : 'slide-no-actived'" (click)="setSelected(categ.codigo)">
           {{ categ.nome }}
         </ion-slide>
@@ -40,7 +42,7 @@
 
           <ion-row class="ion-text-center fonte">
             <ion-col>
-              {{lanche.nome}}<br>
+              {{ lanche.nome }}<br>
               {{ lanche.preco }}
               
             </ion-col>
